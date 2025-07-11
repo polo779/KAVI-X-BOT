@@ -1,7 +1,7 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
-global.sessionID = process.env.SESSIONID || "KAVI-X-SESSION-ID~hNBCyYxD#0ElxUK0rtBOt06DiPPOKiysSGKosiqHJWPMS_BGNqgE"
+global.sessionID = process.env.SESSIONID || "KAVI-X-SESSION-ID~gFJHiApL#kLrnq7jx8DUGWQ7AQJ8z2qYMKQKKL790F856yNSwGX4"
 global.botname = process.env.BOTNAME || "KAVI-X MD"
 global.ownernumber = process.env.OWNERNUMBER || "0716873670"
 global.ownername = process.env.OWNERNAME || "Cyber Kavi"
@@ -15,7 +15,7 @@ global.botprefix = process.env.BOTPREFIX || "."
 global.restart = process.env.RESTART || true
 global.mongoDB = process.env.MONGODB_URI || "ᴘᴜᴛ ʏᴏᴜʀ ᴍᴏɴɢᴏᴅʙ ᴜʀɪ ʜᴇʀᴇ."
 
-let file = require.resolve(__filename)
+let file = require.resolve(__danuxbot)
 fs.watchFile(file, () => {
     fs.unwatchFile(file)
     console.log(chalk.redBright(`Update'${__filename}'`))
